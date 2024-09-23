@@ -1,50 +1,49 @@
-Un modello di previsione per il mercato immobiliare
+#A prediction model for the real estate market
 
-RealEstateAI Solutions si propone di ottimizzare la valutazione dei prezzi immobiliari attraverso l'uso di tecniche avanzate di regolarizzazione in modelli di regressione lineare. <br>
-L'obiettivo è fornire previsioni di prezzo più accurate e affidabili, riducendo il rischio di overfitting e migliorando la capacità di generalizzazione del modello.<br>
+RealEstateAI Solutions aims to optimize real estate price valuation through the use of advanced regularization techniques in linear regression models. The goal is to provide more accurate and reliable price predictions, reducing the risk of overfitting and improving the model's generalization ability.
 
-Nel settore immobiliare, ottenere stime precise dei prezzi delle proprietà è cruciale per prendere decisioni informate. Tuttavia, i modelli di regressione lineare tradizionali possono soffrire di overfitting, compromettendo l'accuratezza delle previsioni. È necessario esplorare metodi di regolarizzazione efficaci per migliorare le performance predittive e gestire la complessità del modello. <br>
+In the real estate sector, obtaining accurate property price estimates is crucial for making informed decisions. However, traditional linear regression models can suffer from overfitting, compromising prediction accuracy. It is necessary to explore effective regularization methods to improve predictive performance and manage model complexity.
 
-Implementando e confrontando metodi di regolarizzazione come Lasso, Ridge e Elastic Net, RealEstateAI Solutions offrirà un sistema in grado di fornire previsioni di prezzo immobiliari più accurate e stabili. <br>
-Questo permetterà agli agenti immobiliari e agli investitori di prendere decisioni basate su dati più affidabili, aumentando la loro competitività nel mercato. <br>
+By implementing and comparing regularization methods such as Lasso, Ridge, and Elastic Net, RealEstateAI Solutions will offer a system capable of providing more accurate and stable real estate price predictions. This will allow real estate agents and investors to make decisions based on more reliable data, increasing their competitiveness in the market.
 
-Requisiti del Progetto: <br>
+**Project Requirements:**
 
-1) Preparazione del Dataset.
-- Caricamento e preprocessamento dei dati sui prezzi immobiliari.
-- Gestione dei valori mancanti, codifica delle variabili categoriche e normalizzazione/scalatura dei dati.
+1. **Dataset Preparation:**
+* Loading and preprocessing real estate price data.
+* Handling missing values, encoding categorical variables, and normalizing/scaling data.
 
-2) Caricamento e preprocessamento dei dati sui prezzi immobiliari.
-- Ridge Regression: Implementazione e addestramento del modello con regolarizzazione Ridge.
-- Lasso Regression: Implementazione e addestramento del modello con regolarizzazione Lasso.
-- Elastic Net Regression: Implementazione e addestramento del modello con regolarizzazione Elastic Net.
+2. **Model Implementation:**
+* Ridge Regression: Implementation and training of the model with Ridge regularization.
+* Lasso Regression: Implementation and training of the model with Lasso regularization.
+* Elastic Net Regression: Implementation and training of the model with Elastic Net regularization.
 
-3) Valutazione delle Performance.
-- Utilizzo di tecniche di validazione incrociata.
-- Calcolo del Mean Squared Error (MSE) per ciascun modello.
-- Confronto della complessità dei modelli valutando il numero di coefficienti non nulli.
-- Analisi e confronto dei risultati dei vari metodi di regolarizzazione.
+3. **Performance Evaluation:**
+* Use of cross-validation techniques.
+* Calculation of Mean Squared Error (MSE) for each model.
+* Comparison of model complexity by evaluating the number of non-zero coefficients.
+* Analysis and comparison of results from the various regularization methods.
 
-4) Visualizzazione dei Risultati
-- Creazione di grafici per visualizzare e confrontare le performance dei modelli.
-- Visualizzazione della distribuzione dei residui per valutare l'adeguatezza del modello.
-- Visualizzazione dell'andamento dei coefficienti dei modelli rispetto ai parametri di regolarizzazione.
+4. **Results Visualization:**
+* Creation of charts to visualize and compare model performances.
+* Visualization of residual distribution to assess model adequacy.
+* Visualization of the trend of model coefficients concerning regularization parameters.
 
-Il progetto deve includere il codice sorgente completo, con commenti dettagliati che spiegano i vari passaggi, le scelte fatte e i risultati ottenuti, per garantire trasparenza e replicabilità del lavoro.
+The project must include the complete source code, with detailed comments explaining the various steps, choices made, and results obtained, to ensure transparency and replicability of the work.
 
-Il dataset
-Il dataset è disponibile qui: https://proai-datasets.s3.eu-west-3.amazonaws.com/housing.csv (liberamente tratto dal seguente dataset: https://www.kaggle.com/datasets/yasserh/housing-prices-dataset)
+# The dataset
 
-- Price: il prezzo, il target da prevedere
-- Area: superficie dell’immobile
-- Bedrooms: numero di camere da letto
-- Bathrooms: numero di bagni
-- Stories: numero di piani
-- Mainroad: vale 1 se l’immobile affaccia su una strada principale, 0 altrimenti
-- guestroom: vale 1 se l’immobile ha una stanza degli ospiti, 0 altrimenti
-- basement: vale 1 se l’immobile ha un seminterrato, 0 altrimenti
-- hotwaterheating: vale 1 se l’immobile ha una caldaia, 0 altrimenti
-- airconditioning: vale 1 se l’immobile ha l’aria condizionata, 0 altrimenti
-- parking: numero di parcheggi
-- prefarea: vale 1 se l’immobile è in una zona prestigiosa, 0 altrimenti
-- Furnishingstatus: vale 0 se l’immobile non è arredato, 1 se è parzialmente arredato, 2 se è completamente arredato
+The dataset is available here: https://proai-datasets.s3.eu-west-3.amazonaws.com/housing.csv (freely adapted from the following dataset: https://www.kaggle.com/datasets/yasserh/housing-prices-dataset)
+
+* Price: the price, the target to predict
+* Area: the property's surface area
+* Bedrooms: the number of bedrooms
+* Bathrooms: the number of bathrooms
+* Stories: the number of floors
+* Mainroad: 1 if the property faces a main road, 0 otherwise
+* guestroom: 1 if the property has a guest room, 0 otherwise
+* basement: 1 if the property has a basement, 0 otherwise
+* hotwaterheating: 1 if the property has a boiler, 0 otherwise
+* airconditioning: 1 if the property has air conditioning, 0 otherwise
+* parking: the number of parking spaces
+* prefarea: 1 if the property is in a prestigious area, 0 otherwise
+* Furnishingstatus: 0 if the property is unfurnished, 1 if it is partially furnished, 2 if it is fully furnished
