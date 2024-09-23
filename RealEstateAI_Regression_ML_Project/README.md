@@ -1,4 +1,4 @@
-#A prediction model for the real estate market
+# A prediction model for the real estate market
 
 RealEstateAI Solutions aims to optimize real estate price valuation through the use of advanced regularization techniques in linear regression models. The goal is to provide more accurate and reliable price predictions, reducing the risk of overfitting and improving the model's generalization ability.
 
